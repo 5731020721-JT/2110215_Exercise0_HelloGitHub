@@ -20,6 +20,18 @@ public class Hello {
 	
 	public static int[] bubbleSort(int[] array){
 		// TODO Implement this method to sort the given array in an ascending order and return the sorted array.
+		boolean isChange =true;
+		int temp;
+		while(isChange){
+			for(int i =0;i<array.length;i++){
+				if(array[i]> array[i+1]){
+					temp =array[i];
+					array[i]=array[i+1];
+					array[i+1]=temp;
+					isChange=true;		
+				}
+			}
+		}
 		return array;
 	}
 	
